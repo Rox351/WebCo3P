@@ -1,0 +1,61 @@
+body {
+  background-color: #0098FF; /* Definindo a cor de fundo para cinza */
+  margin: 0; /* Removendo margens padrão */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  border-radius: 20px;
+  border: 2px solid #0B286E;
+  background-color: #0B286E;
+  padding: 50px;
+}
+
+img{
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.button:hover{
+  border: 2px solid #0098FF;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #0098FF;
+}
+
+h1 {
+  color: white; /* Definindo a cor do texto para branco */
+  margin-top: 20px; /* Adicionando espaço superior */
+}
+
+img {
+  margin-top: 20px; /* Adicionando espaço superior */
+}

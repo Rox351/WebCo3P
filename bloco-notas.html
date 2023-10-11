@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bloco de Notas</title>
+    <link rel="stylesheet" href="src/css/bloco-notas.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <div class="botoes">
+    <button id="toggle-theme">Modo Dark</button>
+    <button id="show-alert" class="emoji-not">Atalhos</button></div>
+    <div id="editor-container">
+        <div id="editor"></div>
+    </div>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Atalhos:</strong> 
+        <ul>
+            <li>CTRL+Y = Refaz o Texto</li>
+            <li>CTRL+Z = Desfaz o Texto</li>
+            <li>CTRL+D = Seleção Multipla</li>
+            <li>Alt+ Clique = Duplica o Seletor do Mouse</li>
+        </ul>
+    </div>
+
+    <script src="https://unpkg.com/monaco-editor@0.26.1/min/vs/loader.js"></script>
+    <script src="src/Js/bloco-notas.js"></script>
+
+</body>
+</html>

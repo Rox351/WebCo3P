@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código de Postagem - Informações Importantes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center; /* Centraliza todo o conteúdo na página */
+            background-color: #0B286E; /* Cor de fundo da página */
+            color: white; /* Cor do texto na página */
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            margin-left: 20px;
+            text-align: left; /* Alinha o texto à esquerda dentro dos parágrafos */
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: left; /* Alinha o texto à esquerda dentro da lista não ordenada */
+        }
+        li {
+            margin-bottom: 10px;
+
+        }
+        strong{
+          cursor: pointer;
+        }
+        /* Estilos para as seções */
+        .section {
+            border: 1px solid #0098FF; /* Cor das bordas das seções */
+            background-color: #0098FF; /* Cor de fundo das bordas das seções */
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        /* Estilos para o alerta */
+        .alert {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 255, 0.2); /* Fundo azul claro quase transparente */
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            z-index: 9999;
+        }
+
+        
+        a {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+        .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #0B286E;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.button:hover {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #0B286E;
+    font-weight: bold;
+}
+
+    </style>
+    <script>
+        // Função para copiar o texto e exibir um alerta
+        function copyToClipboardAndAlert(text) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            showAlert("Texto copiado para a área de transferência.", 2000); // 2000ms = 2 segundos
+        }
+
+        // Função para exibir um alerta na tela por um determinado período de tempo
+        function showAlert(message, duration) {
+            const alertElement = document.createElement('div');
+            alertElement.textContent = message;
+            alertElement.classList.add('alert');
+            document.body.appendChild(alertElement);
+
+            // Exibir o alerta
+            alertElement.style.display = 'block';
+
+            // Remover o alerta após o tempo especificado
+            setTimeout(() => {
+                document.body.removeChild(alertElement);
+            }, duration);
+        }
+    </script>
+</head>
+<body>
+    <div class="section">
+        <a class="button" href="Menus.html" style="margin-top: 20px;">Página
+            Inicial</a>
+        <h1>Código de Postagem - Informações Importantes</h1>
+        <p>O código de postagem é um elemento crucial na logística de envio e retorno de produtos nas filiais da Web. Para garantir que tudo ocorra sem problemas e para evitar erros, é fundamental compreender como funciona o processo de retorno dos produtos às filiais de origem. A seguir, explicaremos as diretrizes gerais e forneceremos informações importantes sobre os endereços e telefones de todas as filiais da Web.</p>
+    </div>
+    <div class="section">
+        <h2>Diretrizes para o Retorno de Produtos:</h2>
+        <ul>
+            <li><strong>Filial de Origem:</strong> Com exceção dos produtos que saem da filial 05 e que retornam para a 04, os produtos devem ser encaminhados de volta para a filial de origem. Por exemplo, se um produto saiu do CD 09, ele deve ser enviado de volta para o CD 09.</li>
+            <li><strong>Verificação no SRI:</strong> Antes de encaminhar qualquer produto de volta, é necessário verificar no Sistema de Registro de Itens (SRI) qual é a filial de onde o pedido saiu. Isso é fundamental para direcionar corretamente o retorno.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Endereços e Telefones das Filiais da Web:</h2>
+        <ul>
+            <li>FILIAL 01 e 06 - CD Porto Alegre/RS<br>
+            Endereço: Travessa Venezuela 210, Navegantes - Porto Alegre/RS - CEP <strong  class="cep" onclick="copyToClipboardAndAlert('90240220')">90240220</strong><br>
+            Telefone: <strong  class="fone" onclick="copyToClipboardAndAlert('51 30251440')">51 30251440</strong></li>
+            <li>FILIAL 04 - CD Viana/ES<br>
+            Endereço: Rua Idalino Carvalho S/N, Parque Industrial - Viana/ES - CEP <strong  class="cep" onclick="copyToClipboardAndAlert('29136519')">29136519</strong><br>
+            Telefone: <strong  class="fone" onclick="copyToClipboardAndAlert('27 32461500')">27 32461500</strong></li>
+            <li>FILIAL 09 - CD Navegantes/SC<br>
+            Endereço: Rua Edgar Negherbon 229, Machados - Navegantes/SC - CEP <strong  class="cep" onclick="copyToClipboardAndAlert('88371545')">88371545</strong><br>
+            Telefone: <strong  class="fone" onclick="copyToClipboardAndAlert('51 30251440')">51 30251440</strong></li>
+        </ul>
+    </div>
+
+    <p>Mantenha essas informações por perto para garantir que os produtos sejam encaminhados corretamente e para evitar qualquer inconveniente durante o processo de retorno. A logística eficiente é fundamental para manter nossas operações funcionando perfeitamente. Se tiver alguma dúvida ou precisar de assistência adicional, não hesite em entrar em contato com a equipe de logística.</p>
+</body>
+</html>

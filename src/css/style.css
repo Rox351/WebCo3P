@@ -1,0 +1,426 @@
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+/* List Style */
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+  
+}
+
+li:nth-child(1) {
+  margin: 10px;
+}
+
+li:nth-child(2) {
+  
+  margin: 25px;
+}
+
+
+li:nth-child(3) {
+  
+  margin: 0 0 0 1px;
+}
+
+
+.image-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 0px;
+  gap: 0px;
+}
+
+
+/* Link Styles */
+
+a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+#cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  /* padding: 10px 15px; */
+}
+
+#logo-esquerda {
+  width: 200px;
+  height: 55px;
+  margin-right: auto;
+}
+
+#logo-direita {
+  width: 150px;
+  height: 50px;
+  margin-left: auto;
+}
+
+/* Estilo de letras */
+
+span {
+  font-size: 1.2em;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.button:hover{
+  border: 2px solid #0098FF;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #0098FF;
+}
+
+.conteudo {
+  position: relative;
+  }
+  
+  .sku-box {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 0.2em;
+  font-size: 24px;
+  }
+  
+  .sku-maco {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translate(50%, -50%);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 0.2em;
+  font-size: 24px;
+  }
+  
+  .cigarros {
+  position: relative;
+  }
+  
+
+
+.desativado{
+  color: #e50707;
+}
+
+.sticky {
+  position: sticky;
+  padding: 20px;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: #050505;
+}
+
+h2 {
+  display: block;
+  font-size: 1.1em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: #0e0d0d;
+}
+
+b{
+    color: #000;
+    font-weight: bold;
+    cursor: auto;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #3d3a3a;
+}
+
+div .quadrado{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+align-items: center;
+}
+
+h4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: ;
+  /*Esconde o texto na pagina, mas ainda busca em JS */
+  font-size: 5px;
+  color: #000000;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+h5 {
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: bold;
+  color: #fff;
+  flex: 1;
+}
+
+
+/* Table Styles */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+
+td {
+  border: 1px solid black;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#tabela {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  border: solid 1px;
+  text-align: center;
+  border-collapse: inherit;
+  font-size: 0.85em;
+}
+
+#tabela tbody {
+  border: solid 1px;
+}
+
+#tabela thead {
+  background: beige;
+  cursor: default;
+}
+
+#tabela thead th:nth-child(1) {
+  width: 100px;
+  cursor: default;
+}
+
+/* Filtro da Tabela */
+#tabela input {
+  display: block;
+  flex-direction: column;
+  border: #000 2px solid;
+  border-radius: 5px;
+  text-align: center;
+  color: rgb(3, 3, 3);
+  font-weight: bold;
+  height: 25px;
+  width: 100%;
+}
+
+/* Table Row Styles */
+
+/* Titulo */
+th.xl102 {
+  border-right: 0.5pt solid black;
+  height: 21pt;
+  width: 1908pt;
+  color: white;
+  font-size: 16.0pt;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  background: #0B286E;
+  padding: 0 0px;
+}
+
+/* Sub-Titulo 1 */
+th.xl66 {
+  mso-style-parent: style0;
+  color: white;
+  font-size: 10.0pt;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  border: 0.5pt solid windowtext;
+  background: #0070C0;
+  mso-pattern: black none;
+  padding: 0 30px;
+}
+
+/* Sub-Titulo 2 */
+th.xl67 {
+  mso-style-parent: style0;
+  color: white;
+  font-size: 10.0pt;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  border: 0.5pt solid windowtext;
+  background: #548235;
+  mso-pattern: black none;
+  padding: 0 30px;
+}
+
+
+
+/* Tabela ao Passar o Mouse */
+td:hover {
+  color: #ffffff;
+  font-weight: bold;
+  cursor: auto;
+  /*Tipo do Cursor do mouse */
+  background: #bcbcbd;
+}
+
+h1:hover{
+  color: #fff;
+  cursor: pointer;
+}
+
+h2:hover{
+  color: #0098FF;
+  cursor: pointer;
+}
+
+h3:hover{
+  color: #FFFF00;
+  cursor: pointer;
+}
+
+b:hover{
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* Tabela ao Clicar */
+td:active {
+  color: #ffffffff;
+  background: #0070c0;
+}
+
+footer {
+position: relative;
+margin-top: 207%;
+height: 100px;
+}
+
+footer div {
+position: absolute;
+bottom: 0;
+height: 38px;
+text-align: center;
+}
+
+footer p {
+margin: 10px;
+color: #000000;
+}
+
+#rodape {
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+background-color: #a9a9a9;
+padding: 0px;
+text-align: center;
+font-size: 14px;
+color: #888;
+}
+
+#botao-rodape {
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+#botao-rodape a {
+color: white;
+text-decoration: none;
+}
+  
+  
+ 
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+#mode-text {
+  margin-left: 10px;
+}
+
+label .switch p {
+  display: block;
+  text-align: center;
+}
+
+.switch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
