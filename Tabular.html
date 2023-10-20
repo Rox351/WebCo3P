@@ -177,6 +177,13 @@
 
     <script>
 
+                function converterParaMaiusculas() {
+            var inputCliente = document.getElementById('cliente');
+            inputCliente.value = inputCliente.value.toUpperCase();
+        }
+        
+        
+
         // Opções de motivo
         const motivos = [
             // ... Lista de todos os motivos ...
@@ -256,10 +263,7 @@
 
         ];
 
-                function converterParaMaiusculas() {
-            var inputCliente = document.getElementById('cliente');
-            inputCliente.value = inputCliente.value.toUpperCase();
-        }
+
 
         // Evento de escuta para os botões de copiar
         const copyButtons = document.querySelectorAll('.copy-button');
