@@ -177,27 +177,21 @@
 
     <script>
 
-                function converterParaMaiusculas() {
-            var inputCliente = document.getElementById('cliente');
-            inputCliente.value = inputCliente.value.toUpperCase();
-            document.getElementById('cliente').addEventListener('input', converterParaMaiusculas);
-
-        }
-
-        // Adicione um evento de escuta para o campo do cliente
+// Adiciona um evento de escuta para o campo cliente
 document.getElementById('cliente').addEventListener('input', function () {
-    // Obtém o valor do campo do cliente
-    var inputCliente = document.getElementById('cliente').value;
-    
-    // Converte o valor para maiúsculas
-    var inputClienteUpperCase = inputCliente.toUpperCase();
-    
-    // Define o valor convertido de volta no campo do cliente
-    document.getElementById('cliente').value = inputClienteUpperCase;
+    // Converte o texto para maiúsculas
+    converterParaMaiusculas();
 
     // Atualiza a saída
     updateOutput();
 });
+
+// Função para converter o texto do campo cliente para maiúsculas
+function converterParaMaiusculas() {
+    var inputCliente = document.getElementById('cliente');
+    inputCliente.value = inputCliente.value.toUpperCase();
+}
+
 
         
         
