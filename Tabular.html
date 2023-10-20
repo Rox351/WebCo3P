@@ -180,6 +180,8 @@
                 function converterParaMaiusculas() {
             var inputCliente = document.getElementById('cliente');
             inputCliente.value = inputCliente.value.toUpperCase();
+            document.getElementById('cliente').addEventListener('input', converterParaMaiusculas);
+
         }
         
         
