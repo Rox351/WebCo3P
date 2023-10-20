@@ -256,6 +256,11 @@
 
         ];
 
+                function converterParaMaiusculas() {
+            var inputCliente = document.getElementById('cliente');
+            inputCliente.value = inputCliente.value.toUpperCase();
+        }
+
         // Evento de escuta para os botões de copiar
         const copyButtons = document.querySelectorAll('.copy-button');
         copyButtons.forEach(button => {
@@ -549,6 +554,8 @@ motivoInput.addEventListener('keydown', function (e) {
     }
   }
 });
+
+        
 
     </script>
 </body>
