@@ -183,6 +183,22 @@
             document.getElementById('cliente').addEventListener('input', converterParaMaiusculas);
 
         }
+
+        // Adicione um evento de escuta para o campo do cliente
+document.getElementById('cliente').addEventListener('input', function () {
+    // Obtém o valor do campo do cliente
+    var inputCliente = document.getElementById('cliente').value;
+    
+    // Converte o valor para maiúsculas
+    var inputClienteUpperCase = inputCliente.toUpperCase();
+    
+    // Define o valor convertido de volta no campo do cliente
+    document.getElementById('cliente').value = inputClienteUpperCase;
+
+    // Atualiza a saída
+    updateOutput();
+});
+
         
         
 
