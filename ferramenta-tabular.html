@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramentas de Tabular</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+        }
+
+        nav {
+            background-color: #eee;
+            text-align: center;
+            padding: 10px;
+        }
+
+        iframe {
+            display: block;
+            margin: 0px auto; /* Centraliza o iframe na página */
+            border: 0px solid #ddd;
+            width: 80vw; /* Defina a largura desejada */
+            height: 80vh; /* Defina a altura desejada */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <label for="paginas">Escolha uma página:</label>
+        <select id="paginas" onchange="changePage()">
+            <option value="Movidesk.html">Movidesk</option>
+            <option value="Tabular.html">Tabular</option>
+            <option value="Squad2.html">Squad 2</option>
+        </select>
+    </nav>
+
+    <iframe id="mainFrame" src="Movidesk.html" name="mainFrame"></iframe>
+
+    <script>
+        function changePage() {
+            var select = document.getElementById('paginas');
+            var selectedPage = select.options[select.selectedIndex].value;
+            document.getElementById('mainFrame').src = selectedPage;
+        }
+    </script>
+</body>
+</html>

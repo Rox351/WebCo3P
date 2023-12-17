@@ -1,7 +1,7 @@
 //abrir em nova aba
 
 function openFormulario() {
-    window.open('Tabular.html', 'Formulário', 'width=362,height=615.333');
+    window.open('ferramenta-tabular.html', 'Formulário', 'width=362,height=615.333');
   }
 
   function openBlocoNotas() {
